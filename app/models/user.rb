@@ -2,6 +2,6 @@ class User < ApplicationRecord
     validates :name, length: { minimum: 2 }
     validates :name, length: { maximum: 15 }
     validates :name, uniqueness: true
-    has_many :comment
-    has_many :post
+    has_many :comments
+    has_many :posts
 end
